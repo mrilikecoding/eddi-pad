@@ -1,0 +1,51 @@
+[package]
+name = "eddi-pad"
+version = "0.1.0"
+authors = ["mrilikecoding"]
+edition = "2025"
+description = "High-performance simulation environment for interactive installations"
+license = "MIT"
+repository = "https://github.com/mrilikecoding/eddi-pad"
+
+[dependencies]
+# Async runtime
+tokio = { version = "1.0", features = ["full"] }
+
+# Serialization
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# WebSocket for browser communication
+tokio-tungstenite = "0.21"
+
+# OSC protocol
+rosc = "0.9"
+
+# DMX protocol
+dmx512-rdm-protocol = "0.2"
+
+# Bluetooth LE
+btleplug = "0.11"
+
+# 2D graphics and UI
+eframe = "0.24"
+egui = "0.24"
+egui_plot = "0.24"
+
+# Math and geometry
+nalgebra = "0.32"
+
+# Logging
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+# Error handling
+anyhow = "1.0"
+thiserror = "1.0"
+
+# Configuration
+config = "0.13"
+toml = "0.8"
+
+[dev-dependencies]
+tokio-test = "0.4"
