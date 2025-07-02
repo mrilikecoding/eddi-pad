@@ -2,20 +2,20 @@
 
 ## Vision Statement
 
-**Eddi-pad** is a high-performance, real-time simulation environment that bridges virtual design and physical deployment for interactive installations. It provides an intuitive interface for designing responsive environments while serving as a performant I/O control hub for reaching real sound, light, Bluetooth, and other output targets.
+**Eddi-pad** is a high-performance, real-time simulation environment that bridges virtual design and physical deployment for interactive installations. It offers an intuitive interface for designing responsive environments while serving as a performant I/O control hub for reaching real sound, light, Bluetooth, and other output targets.
 
 ## Core Philosophy
 
 - **Performance First**: Sub-millisecond latency for device communication
 - **Device Agnostic**: Unified interface for virtual and physical targets  
-- **Spatial Intelligence**: Leverages Eddi's proven 7-zone spatial model
+- **Spatial Intelligence**: Uses Eddi's proven 7-zone spatial model
 - **Movement Responsive**: Deep integration with StreamPoseML pose analysis
 - **Real-time Visualization**: Live preview of all environmental effects
 
 ## Why Rust?
 
 ### Performance Requirements
-- **Device Protocol Handling**: Simultaneous management of 100+ devices across multiple protocols
+- **Device Protocol Handling**: Simultaneous management of 100+ devices over multiple protocols
 - **Real-time Constraints**: <1ms latency for critical lighting/sound cues
 - **Memory Safety**: Zero-cost abstractions without garbage collection pauses
 - **Concurrency**: Efficient handling of multiple device streams simultaneously
@@ -215,7 +215,7 @@ if gesture.is_expansive() {
 
 This project is designed to integrate with:
 - [StreamPoseML](../StreamPoseML/) - Real-time pose extraction and feature engineering
-- [Skeleton-MHI](../skeleton-mhi/) - Novel gesture segmentation using keypoint-based Motion History Images
+- [Skeleton-MHI](../skeleton-mhi/) - Gesture segmentation using keypoint-based Motion History Images
 - [Eddi](../eddi/) - Movement-responsive environment system with AI Director
 
 ## Conclusion
