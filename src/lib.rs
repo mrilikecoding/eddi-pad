@@ -4,21 +4,16 @@
 //! commonly used in interactive installations, including DMX lighting, OSC communication,
 //! and Bluetooth devices.
 
-pub mod device;
-pub mod spatial;
-pub mod protocols;
-pub mod ui;
-pub mod config;
-
-pub use device::{Device, DeviceManager, DeviceError};
-pub use spatial::{SpatialZone, SpatialController, Position};
-pub use config::Config;
-
 /// Core result type for the library
 pub type Result<T> = std::result::Result<T, Box<dyn std::error::Error + Send + Sync>>;
 
 /// Version information
 pub const VERSION: &str = env!("CARGO_PKG_VERSION");
+
+/// Basic test to verify compilation
+pub fn hello() -> &'static str {
+    "Hello from eddi-pad!"
+}
 
 #[cfg(test)]
 mod tests {
@@ -27,5 +22,10 @@ mod tests {
     #[test]
     fn test_version() {
         assert!(!VERSION.is_empty());
+    }
+
+    #[test]
+    fn test_hello() {
+        assert_eq!(hello(), "Hello from eddi-pad!");
     }
 }
