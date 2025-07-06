@@ -2,7 +2,7 @@
 name = "eddi-pad"
 version = "0.1.0"
 authors = ["mrilikecoding"]
-edition = "2025"
+edition = "2021"
 description = "High-performance simulation environment for interactive installations"
 license = "MIT"
 repository = "https://github.com/mrilikecoding/eddi-pad"
